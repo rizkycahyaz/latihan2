@@ -1,17 +1,11 @@
 const express = require("express");
 const app = express();
-const port = 8080;
+const port = 3000;
 
 const routenama_dpi = require("./controller/dpi.js");
 const routeid_pemilik = require("./controller/pemilik.js");
 const routeid_alat_tangkap = require("./controller/alat_tangkap.js");
 const routeid_kapal = require("./controller/kapal.js");
-
-//res.send('halo lovedek')
-
-//app.listen(port, () => {
-//console.log(`aplikasi berjalan di http://locallhost:${port}`);
-//});
 
 const bodyPs = require("body-parser");
 app.use(bodyPs.urlencoded({ extended: false }));

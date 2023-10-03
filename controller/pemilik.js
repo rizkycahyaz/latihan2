@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
 const { body, validationResult } = require("express-validator");
-const connect = require("../config/db.js");
+const connect = require("../config/db");
 
 router.get("/", (req, res) => {
   connect.query("SELECT * FROM pemilik", (err, rows) => {
